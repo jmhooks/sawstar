@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SawStar</title>
+        <link rel="stylesheet" href="external/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body onload="buildGroups()">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand navbar-dark" href="#" onclick="return false">SawStar Dashboard</a>
+        </nav>
+
+        <div class="container-fluid">
+
+            <!-- Groups -->
+            <div id="groups">
+                <h4>Groups</h4>
+                <div class="row" id="groupsContainer">
+                    <!-- Group cards populated here -->
+                </div>
+            </div>
+
+            <!-- Things -->
+            <div id="things" style="display: none">
+                <h4>Things</h4>
+                <div class="row" id="thingsContainer">
+                    <!-- Thing cards populated here -->
+                </div>
+            </div>
+
+            <!-- Analytics -->
+            <div id="analytics" style="display: none">
+                <h4>Analytics</h4>
+                <div class="row" id="analyticsContainer">
+                    <!-- Analytics cards populated here -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JavaScript Sources -->
+        <script src="external/jquery/jquery-3.2.1.js"></script>
+        <script src="external/popper/popper.js"></script>
+        <script src="external/bootstrap/js/bootstrap.js"></script>
+        <script src="./builder.js"></script>
+    </body>
+</html>
